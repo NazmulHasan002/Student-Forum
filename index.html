@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Student Registration Form</title>
+<style type="text/css">
+th {
+	color: #FFF;
+	font-size: 25px;
+	font-weight: lighter;
+	text-align: left;
+
+}
+td{
+  font-size: 15px;
+}
+input{
+  text-align: left;
+}
+body {
+	background-color:#fffff;
+	color:white;
+  font-family:Calibri Light (Headings);
+  
+}
+
+</style>
+
+
+</head>
+
+<body>
+<form>
+<table bgcolor="orange" width="700" border="0" align="center" cellpadding="0" cellspacing="5">
+  <tr>
+    <th width="25%" height="60">&nbsp;</th>
+    <th><p>Student Registration Form</p></th>
+    <th width="5%"></th>
+  </tr>
+  <tr>
+    <td><strong>Name</strong></td>
+    <td><input name="name" type="text" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <tr>
+    <td><strong>Father's Name</strong></td>
+    <td><input name="name" type="text" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <tr>
+    <td><strong>DOB</strong></td>
+    <td><input name="name" type="text" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Sex</strong></td>
+    <td><input type="radio" name="gender" value="male" required>Male
+    	<input type="radio" name="gender" value="female">Female</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Email ID</strong></td>
+    <td><input name="Email" type="email" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  
+   <tr>
+    <td><strong>Course</strong></td>
+    <td><select id="slct2" name="slct2"  required onchange="populated(this.id,'slct3')">
+      <option>Select..</option>
+      <option value=" CSE 607"> CSE 607</option>
+      <option value=" CSE 608"> CSE 608</option>
+    </select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Parmanent Address</strong></td>
+    <td><input name="name2" type="text" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+   
+   <tr>
+    <td><strong>City</strong></td>
+    <td><select id="slct2" name="slct2"  required onchange="populated(this.id,'slct3')">
+      <option>Select..</option>
+      <option value=" Dhaka"> Dhaka</option>
+      <option value=" Barisal">Barisal</option>
+      <option value="Jhalokhati  ">Jhalokhati </option>
+    </select></td>
+    <td>&nbsp;</td>
+  </tr>
+
+    <tr>
+    <td><strong>District</strong></td>
+    <td><select id="slct2" name="slct2"  required onchange="populated(this.id,'slct3')">
+      <option>Select..</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Barisal">Barisal</option>
+      <option value="Khulna">Khulna</option>
+     <option value="Jhalokhati  ">Jhalokhati </option>
+    </select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>State</strong></td>
+    <td><select id="slct2" name="slct2"  required onchange="populated(this.id,'slct3')">
+      <option>Select..</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Barisal">Barisal</option>
+      <option value="Khulna">Khulna</option>
+     <option value="Jhalokhati  ">Jhalokhati </option>
+    </select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>PinCode</strong></td>
+    <td><input name="password" type="password" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <tr>
+    <td><strong>MobileNo</strong></td>
+    <td><input name="name" type="text" size="35" required/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr><br><br>
+    <td><input type="reset" /></td>
+    <td><input type="submit" value="Submit Form"  onsubmit= "alert('your details have been submitted!')"/></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
